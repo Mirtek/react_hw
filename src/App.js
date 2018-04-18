@@ -50,13 +50,8 @@ const Comp1 = (props) => {
 }
 
 const Tab = (props) => {
-  console.log(props);
-
-  const handleClick = () => {
-    props.action(props.id);
-  }
-
-  return( <li className="tab-style" onClick={handleClick}>{props.name}
+  //console.log(props);
+  return( <li className="tab-style" onClick={ () => props.action(props.id)}>{props.name}
           </li>
   )
 }
